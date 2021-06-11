@@ -25,6 +25,9 @@
 		<lombok.version>1.16.20</lombok.version>
 		<aws-java-sdk.version>1.11.887</aws-java-sdk.version>
 		<amazon-sqs-java-messaging-lib.version>1.0.8</amazon-sqs-java-messaging-lib.version>
+		<spring-data-dynamodb.version>5.2.1</spring-data-dynamodb.version>
+		<spring-boot-admin.version>2.4.1</spring-boot-admin.version>
+		<springfox-swagger.version>2.9.2</springfox-swagger.version>
 	</properties>
 
 	<dependencies>
@@ -40,6 +43,11 @@
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-sqs</artifactId>
+			<version>${aws-java-sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-dynamodb</artifactId>
 			<version>${aws-java-sdk.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.amazonaws/amazon-sqs-java-messaging-lib -->
@@ -59,6 +67,32 @@
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version><!--$NO-MVN-MAN-VER$ -->
 			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.boostchicken/spring-data-dynamodb -->
+		<dependency>
+			<groupId>io.github.boostchicken</groupId>
+			<artifactId>spring-data-dynamodb</artifactId>
+			<version>${spring-data-dynamodb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-server</artifactId>
+			<version>${spring-boot-admin.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>${spring-boot-admin.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-swagger.version}</version>
 		</dependency>
 
 		<dependency>
